@@ -4,7 +4,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    color: #f4f4f4;
+    --cor-destaque: #87d0a6;
 }
+
 .header {
     width: 100%;
     max-width: 900px;
@@ -37,6 +41,7 @@ body {
 
 .icone--texto {
     margin: 0 8px;
+    animation: pulsar 1s infinite alternate;
 }
 
 .main {
@@ -58,21 +63,20 @@ body {
     width: 100%;
     max-width: 200px;
     border-radius: 50%;
+    border: 6px solid #868686;
 }
 
 .perfil__nome {
     font-family: 'Damion', cursive;
     font-size: 52px;
     font-weight: 400;
-    color: #87d0a6;
+    color: var(--cor-destaque);
     margin: 16px 0;
 }
 
 .perfil__descricao {
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #f4f4f4;
     margin: 0;
     width: 100%;
     width: 350px;
@@ -88,10 +92,9 @@ body {
 }
 
 .section__titulo {
-    font-family: 'Poppins', sans-serif;
     font-size: 22px;
     font-weight: 400;
-    color: #87d0a6;
+    color: var(--cor-destaque);
     margin: 16px 0;
 }
 
@@ -104,25 +107,22 @@ body {
 }
 
 .curso__titulo {
-    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: #87d0a6;
+    color: var(--cor-destaque);
     margin: 8px 0;
 }
 
 .curso__descricao {
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #f4f4f4;
     margin: 8px 0;
 }
 
 .footer {
     width: 100%;
     height: 42px;
-    background-color: #87d0a6;
+    background-color: var(--cor-destaque);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,10 +131,19 @@ body {
 }
 
 .footer__texto {
-    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #313131;
     display: flex;
     align-items: center;
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(.8);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
 }
