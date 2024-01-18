@@ -73,3 +73,44 @@ body {
     width: 350px;
     text-align: center;
 }
+
+.section {
+    border: 1px solid red;
+    padding: 8px;
+    width: 100%;
+    max-width: 350px;
+    margin: 24px auto;  
+}
+
+.section__titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #87d0a6;
+    margin: 16px 0;
+}
+
+.curso {
+    border: 1px solid red;
+    background-color: #3b3b3b;
+    padding: 8px;
+    margin: 16px 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.curso__titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #87d0a6;
+    margin: 8px 0;
+}
+
+.curso__descricao {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #f4f4f4;
+    margin: 8px 0;
+}
