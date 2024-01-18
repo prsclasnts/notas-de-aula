@@ -1,5 +1,9 @@
 body {
     background-color: #313131;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .header {
     width: 100%;
@@ -80,6 +84,7 @@ body {
     width: 100%;
     max-width: 350px;
     margin: 24px auto;  
+    box-sizing: border-box;
 }
 
 .section__titulo {
@@ -122,6 +127,7 @@ body {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 .footer__texto {
